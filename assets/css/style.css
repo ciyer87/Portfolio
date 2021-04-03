@@ -1,0 +1,299 @@
+/* color variables */
+
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+    --lightskyblue: lightskyblue;
+    --header-footer-background-color: #404040;
+    --about-me-work-border: #333366;
+    --rgba-border-color-opacity: rgba(135, 206, 250, 0.8); 
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 100%;
+    background: url("../images/subtle_background.jpeg")
+  }
+
+  /* HEADER / NAV BAR STYLES START */
+header {
+    background-color:var(--header-footer-background-color);
+    display: flex;
+    justify-content: space-between;
+    padding:  20px 35px;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%
+  }
+  
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;   
+  }
+  
+  header a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    color: var(--lightskyblue);  
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    list-style: none;
+    padding-right: 0px;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  } 
+
+  /* HEADER / NAVBAR STYLES END */
+  /* hero section that holds picture and title for the candidate */
+
+.hero {
+    margin-bottom: 25px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flext-start
+    
+}
+.hero .picture, .picture img{
+    width: 250px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+/* Styling to the subtitle the Hero container */
+.subtitle { 
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-top: 5%;
+  opacity: .95;
+  font-size: 30px;
+}
+
+/* Apply background to any span with this class name */
+.span-background { 
+  background-color: var(--lightskyblue);
+  position: relative;
+  z-index: 999;
+  line-height: 1.5;
+  padding-left: 8px;
+  padding-right: 8px; 
+  opacity: .95;
+}
+
+/* Styling the about me container */
+
+.aboutme {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;     
+}
+
+/* styling the about me title on the left pane of the screen */
+.aboutme-title{ 
+  padding-top: 15px;
+  font-size: 35px;
+  flex: 0 0 200px;
+  padding-right: 20px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  text-align: right;
+  margin-bottom: 30px;
+  border-right: 2px solid var(--about-me-work-border);
+}
+
+/* styling the about me content of the candidate */
+.aboutme .aboutme-desc p {
+  width: 100%;
+  font-size: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-right: 80px;
+  padding-left: 30px;
+  
+}
+
+.aboutme-desc {
+  padding-left: 15px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+/* styling the project section */
+
+  .work-title {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    position: relative; 
+    margin-top: 15px;
+    margin-left: 80px;
+  }
+
+  /* styling the title of the container */
+  .work-title p {
+    padding-top: 30px;
+    flex: 0 0 200px;
+    font-size: 35px;
+    padding-right: 20px;
+    padding-left: 50px;
+    text-align: right;
+    border-right: 2px solid var(--about-me-work-border); 
+  }
+
+ /* flex child */
+ .flex-container .projects {
+  /* make each one 35%, putting 10px between each element on the page */
+  width: calc(35% - 10px);
+  margin:5px;
+  border: 3px solid aquamarine; 
+  font-size: 22px;
+  font-weight: bold;
+  /* put space between each one vertically */
+  margin-bottom: 15px;
+  background-position: center;
+  background-size: cover;
+  /* set minimum height value so there's room */
+  min-height: 250px;
+  /* rather than use position...use flexbox and create column instead of row */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-grow: 1;
+ }
+
+.projects:nth-child(1) {
+  /* this is for the bigger image of the 1st project */
+  width: 80%; 
+}
+
+/* styling for the name of the project shown on each project image */
+.first-text {
+  position: absolute;
+  top: 80%;
+  font-size: 30px;
+  font-weight: bold;   
+}
+
+/* styling for the smaller text that lists what was used to build the project */
+.smallimg-first-text {
+  position: absolute;
+  top: 80%;
+  font-size: 20px;
+  font-weight: bold;  
+}
+
+/* styling to span background for both texts in the image */
+.span-background.second-text {
+  position: absolute;
+  line-height: 1;  
+}
+
+.second-text {
+  font-size: 15px;
+}
+
+/* contact-me styling begin */
+.contact-container {
+  height: 100%; 
+  display: flex;   
+}
+.contact{ /* Cell declarations for the title of the container */
+  padding-top: 15px;
+  font-size: 35px;
+  flex: 0 0 200px;
+  padding-right: 20px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  text-align: right;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  border-right: 2px solid var(--about-me-work-border);
+}
+
+.contact-list{
+  padding-left: 30px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5vw;
+  width: 100%;
+  align-content: center;
+}
+
+.tel{
+  text-decoration: underline;
+}
+
+/* media queries styling */
+
+/* Width at 1024px and below */
+@media screen and (max-width: 1024px) {
+  
+}
+
+/* Width at 768px and below */
+@media screen and (max-width: 768px) {
+  
+}
+
+/* Width at 600px and below */
+@media screen and (max-width: 600px) {
+  
+    
+}
+
+/* Width at 480px and below */
+@media screen and (max-width: 480px) {
+  
+}
+
+/* Width at 300px and below */
+@media screen and (max-width: 300px) {
+  
+}
