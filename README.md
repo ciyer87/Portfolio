@@ -7,7 +7,7 @@ This is the portfolio that describes about me and the projects that i have worke
   ![A website with a navigation, a hero image, sections on the left and center and a footer](assets/images/challenge1-screenshot.png)
   
 *  The **URL of the GitHub repository** that contains the code: (https://github.com/ciyer87/Portfolio) 
-*  The **URL of the deployed application**: (https://ciyer87.github.io/code-refactor-challenge)
+*  The **URL of the deployed application**: (https://ciyer87.github.io/Portfolio/)
 
 The following changes were made in the application:
 
