@@ -1,6 +1,7 @@
 # Portfolio
 
 A professional portfolio page to spotlight my work as a full stack web developer for potential employers. 
+===================================================================================================================================
 
 # User Story
 AS AN employer
@@ -8,6 +9,7 @@ AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
 
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+====================================================================================================================================
 
 # Acceptance Criteria
 GIVEN I need to sample a potential employee's previous work
@@ -29,6 +31,7 @@ THEN I am taken to that deployed application
 
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
+========================================================================================================================================
 
 # Technologies Used
 
@@ -36,10 +39,19 @@ THEN I am presented with a responsive layout that adapts to my viewport
 * CSS3
 * Flexbox
 * @Media queries
+=========================================================================================================================================
 
 # Screenshots
+* Desktop
 
-  ![A website with a navigation, a hero image, sections on the left and center and a footer](assets/images/challenge1-screenshot.png)
+  ![Screenshot of portfolio on Desktop](assets/images/Screen Shot Desktop.png)
+  
+* Mobile
+
+ ![Screenshot of portfolio on Mobile](assets/images/Screen Shot Mobile.png)
+  
+  
+ =========================================================================================================================================
   
 *  The **URL of the GitHub repository** that contains the code: (https://github.com/ciyer87/Portfolio) 
 *  The **URL of the deployed application**: (https://ciyer87.github.io/Portfolio/)
