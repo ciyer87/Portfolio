@@ -3,7 +3,7 @@
 A professional portfolio page to spotlight my work as a full stack web developer for potential employers. 
 ===================================================================================================================================
 
-# User Story
+## User Story
 AS AN employer
 
 I WANT to view a potential employee's deployed portfolio of work samples
@@ -11,7 +11,7 @@ I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ====================================================================================================================================
 
-# Acceptance Criteria
+## Acceptance Criteria
 GIVEN I need to sample a potential employee's previous work
 
 WHEN I load their portfolio
@@ -33,7 +33,7 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ========================================================================================================================================
 
-# Technologies Used
+## Technologies Used
 
 * HTML5
 * CSS3
@@ -41,14 +41,14 @@ THEN I am presented with a responsive layout that adapts to my viewport
 * @Media queries
 =========================================================================================================================================
 
-# Screenshots
+## Screenshots
 * Desktop
 
   ![Screenshot of portfolio on Desktop](assets/images/Screen Shot Desktop.png)
   
 * Mobile
 
- ![Screenshot of portfolio on Mobile](assets/images/Screen Shot Mobile.png)
+  ![Screenshot of portfolio on Mobile](assets/images/Screen Shot Mobile.png)
   
   
  =========================================================================================================================================
