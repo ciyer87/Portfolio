@@ -49,11 +49,11 @@ Then i am presented with a repsonsive layout that adapts to my viewport
 ## Screenshots
 * Desktop
 
-  ![Desktop Screenshot](assets/images/Screen Shot Desktop.png)
+  ![Desktop Screenshot](assets/images/desktop.png)
   
 * Mobile
 
-  ![Mobile Screenshot](assets/images/Screen Shot Mobile.png)
+  ![Mobile Screenshot](assets/images/mobile.png)
   
   
  =========================================================================================================================================
