@@ -50,10 +50,12 @@ Then i am presented with a repsonsive layout that adapts to my viewport
 * Desktop
 
   ![Screenshot of portfolio on Desktop](assets/images/Screen Shot Desktop.png)
+  ![Desktop Screenshot](assets/images/Screen Shot Desktop.png)
   
 * Mobile
 
   ![Screenshot of portfolio on Mobile](assets/images/Screen Shot Mobile.png)
+  ![Mobile Screenshot](assets/images/Screen Shot Mobile.png)
   
   
  =========================================================================================================================================
