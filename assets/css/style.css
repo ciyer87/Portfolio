@@ -36,38 +36,33 @@ header h1 {
     font-weight: bold;
     font-size: 36px;
     flex: 1 40%;
-    padding-left: 10px;
-    text-align: center;   
+    padding-left: 10px;  
   }
   
 header a { 
     text-decoration: underline;
     color: var(--lightskyblue);   
   }
-  
-header nav {
-    display: flex;
-    flex: 2 50%;
-    margin-bottom: 15px;
+
+  header nav {
+    margin: 7px 0;
   }
-  
-header nav ul {
+ 
+header nav ul{
   display: flex;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
-  width: 100%
-} 
-
-
-header nav ul li {
-  flex: 1 100%; 
 }
-  
+
 header nav ul li a {
+  padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.55vw;   
-  padding-left: 50px;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
   
 header nav ul li a:hover {
   background: var(--primary-color);
@@ -219,6 +214,10 @@ main {
 /* contact-me styling begin */
 .contact {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  padding:20px;
 }
 
 .contact p {
@@ -227,24 +226,20 @@ main {
   font-size: 30px;
   padding: 20px;
   margin-bottom: 30px;
-  margin-left: 55px;
+  margin-left: 80px;
   text-align: right;
   border-right: 2px solid var(--about-me-work-border); 
 }
 
-.contact-list > ul {
+.contact > ul {
   display: flex;
   margin:20px;
-  align-content: center;
   list-style: none;
-  width: 100%
+  flex-basis: 100%;
+  justify-content: space-around;
 }
 
-.contact-list > ul > li {
-  flex: 1 100%;
-}
-
-.contact-list ul li a {
+.contact ul li a {
   font-weight: lighter;
   font-size: 1.55vw;  
   width: 100%;
@@ -275,19 +270,28 @@ main {
     top: 70%;
     font-size: 15px;
   }
-
-  header nav ul li a {
-    font-size: 1vw;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  header nav ul li{
-    flex-direction: row;
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
   }
 
   header nav ul li a {
-    font-size: 1.55vw;
+    font-size: 20px;
   }
 
   .hero {
@@ -363,7 +367,7 @@ main {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-around;
-    display: block;
+    display: flex;
   }
   
   .contact p{
@@ -371,6 +375,7 @@ main {
     text-align: center;
     padding-top: 0px;
     padding-bottom: 20px;
+    margin-left: 10px;
   }
 
   .contact > div > p {
@@ -379,13 +384,22 @@ main {
     border-bottom: 2px solid var(--about-me-work-border);
   }
 
-  .contact-list ul li a{
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: center;
-  flex-basis: 100%;
-  font-size: 1.55vw;
-  padding-left: 5px;
+  .contact ul {
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    flex-basis: 70%; 
+  }
+
+  .contact ul li {
+
+    font-size: 22px;
+    text-align: center;
+    flex-basis: 40%;
+  }
+
+  .contact ul li a {
+    padding-left: 0px;
+    font-size: 4.55vw;
   }
 }
 
@@ -395,15 +409,30 @@ main {
     margin:   10px;
   }
 
-  .hero .picture, .picture img {
+  .hero .picture img {
     max-width: 200px;
     margin-left: auto;
   }
 
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
   header h1 {
-    font-size: 30px;
-    margin-left: 35px;
-    padding-right:10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
   }
 
   .span-background {
@@ -411,9 +440,6 @@ main {
     background-color: transparent;
   }
 
-  header nav ul li a {
-    padding-left: 40px;
-  }
 }
 
 
