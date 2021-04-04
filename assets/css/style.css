@@ -16,13 +16,9 @@
     padding: 0;
   }
   
-  body {
+body {
     color: var(--tertiary-color);
-    font-family: Helvetica, Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 50vh;
-    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;   
     background: url("../images/subtle_background.jpeg")
   }
 
@@ -31,46 +27,58 @@ header {
     background-color:var(--header-footer-background-color);
     display: flex;
     justify-content: space-between;
-    padding:  20px 35px;
+   
     flex-wrap: wrap;
-    position: -webkit-sticky;
     top: 0;
-    width: 100%
+    width: 100%;
+    align-items: flex-end;
   }
   
-  header h1 {
+header h1 {
     font-weight: bold;
-    margin: 0;
-    font-size: 36px;   
-  }
-  
-  header a {
+    font-size: 36px;
+    flex: 1 40%;
+    align-self: flex-start;
     padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    text-decoration: underline;
-    color: var(--lightskyblue);  
+    text-align: center;   
   }
   
-  header nav {
+header a {
+    
+    text-decoration: underline;
+    color: var(--lightskyblue); 
+  
+  }
+  
+header nav {
     margin: 7px 0;
+    display: flex;
+    flex: 2 50%;
+    width: 100%;
+    align-items: flex-end;
+    margin-bottom: 10px;
   }
   
   header nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-items: center;
+    margin:0;
+    justify-content: space-evenly;
+    align-items: flex-end;
     list-style: none;
-    padding-right: 0px;
+    width: 100%
+  }
+
+  header nav ul li {
+    flex: 1 100%;
+  
   }
   
   header nav ul li a {
-    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+    width: 100%;
+    padding-left: 50px;
   }
   
   header nav ul li a:hover {
@@ -83,18 +91,28 @@ header {
   /* HEADER / NAVBAR STYLES END */
   /* hero section that holds picture and title for the candidate */
 
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+} 
+
 .hero {
     margin-bottom: 25px;
-    margin-top: 15px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: center;
-    align-items: flext-start
+    align-items: flext-start;
+    background-image: url(../images/ggb-night-time.jpeg);
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center -250px;
     
 }
 .hero .picture, .picture img{
-    width: 250px;
+    max-width: 250px;
     border-radius: 20px;
     margin-left: 20px;
 }
@@ -123,46 +141,39 @@ header {
 
 .aboutme {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 15px;
-  justify-content: space-between;
-  flex-wrap: wrap;     
+  margin-bottom: 15px;
+  
+  padding: 20px;     
 }
 
 /* styling the about me title on the left pane of the screen */
 .aboutme-title{ 
-  padding-top: 15px;
+  padding-top: 30px;
   font-size: 35px;
-  flex: 0 0 200px;
-  padding-right: 20px;
-  padding-left: 50px;
-  padding-bottom: 50px;
+  flex: 0 0 250px;
+  padding: 20px;
   text-align: right;
   margin-bottom: 30px;
   border-right: 2px solid var(--about-me-work-border);
+
 }
 
 /* styling the about me content of the candidate */
 .aboutme .aboutme-desc p {
-  width: 100%;
+  width: 80%;
   font-size: 15px;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-right: 80px;
-  padding-left: 30px;
-  
-}
-
-.aboutme-desc {
-  padding-left: 15px;
-  flex-wrap: wrap;
-  flex: 1;
+  padding: 20px 5px;
+  margin-left: 55px; 
 }
 
 /* styling the project section */
 
   .work-title {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   
+    padding: 20px, 0;
   }
 
   .flex-container {
@@ -178,10 +189,10 @@ header {
   /* styling the title of the container */
   .work-title p {
     padding-top: 30px;
-    flex: 0 0 200px;
+    flex: 0 0 250px;
     font-size: 35px;
-    padding-right: 20px;
-    padding-left: 50px;
+    padding: 20px;
+    margin-bottom: 30px;
     text-align: right;
     border-right: 2px solid var(--about-me-work-border); 
   }
@@ -191,20 +202,17 @@ header {
   /* make each one 35%, putting 10px between each element on the page */
   width: calc(35% - 10px);
   margin:5px;
-  border: 3px solid aquamarine; 
-  font-size: 22px;
-  font-weight: bold;
-  /* put space between each one vertically */
-  margin-bottom: 15px;
-  background-position: center;
+  border: 3px solid aquamarine;
+  border-radius: 5px;
+  /*background-position: center;*/
   background-size: cover;
   /* set minimum height value so there's room */
-  min-height: 250px;
+  min-height: 200px;
   /* rather than use position...use flexbox and create column instead of row */
   display: flex;
   flex-direction: column;
   position: relative;
-  flex-grow: 1;
+  flex: 1 40%; 
  }
 
 .projects:nth-child(1) {
@@ -223,7 +231,7 @@ header {
 /* styling for the smaller text that lists what was used to build the project */
 .smallimg-first-text {
   position: absolute;
-  top: 80%;
+  top: 70%;
   font-size: 20px;
   font-weight: bold;  
 }
@@ -246,13 +254,13 @@ header {
 .contact{ /* Cell declarations for the title of the container */
   padding-top: 15px;
   font-size: 35px;
-  flex: 0 0 200px;
+  flex: 0 0 250px;
   padding-right: 20px;
   padding-left: 50px;
   padding-bottom: 50px;
   text-align: right;
   margin-bottom: 30px;
-  margin-top: 15px;
+  margin-top: 30px;
   border-right: 2px solid var(--about-me-work-border);
 }
 
@@ -273,27 +281,55 @@ header {
 /* media queries styling */
 
 /* Width at 1024px and below */
-@media screen and (max-width: 1024px) {
-  
-}
 
-/* Width at 768px and below */
-@media screen and (max-width: 768px) {
-  
-}
-
-/* Width at 600px and below */
-@media screen and (max-width: 600px) {
-  
+/* modify the layout for ipad-sized screens */
+@media screen and (min-width: 768px) {
+  header nav ul li {
+    border: none;
     
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+  }
+ 
 }
 
-/* Width at 480px and below */
-@media screen and (max-width: 480px) {
-  
+@media screen and (max-width: 575px) {
+  header nav ul li{
+    flex-direction: row;
+  }
+  .aboutme{
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    display: block;
+  }
+
+  .aboutme-title{
+    border-bottom: 2px solid var(--about-me-work-border);
+    flex-basis: 100%;
+    text-align: center;
+    border-right: none;
+  }
+
+  .work-title{
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .work-title p {
+
+    border-bottom: 2px solid var(--about-me-work-border);
+    flex-basis: 100%;
+    text-align: center;
+    border-right: none;
+    
+    
+  }
 }
 
-/* Width at 300px and below */
-@media screen and (max-width: 300px) {
+
+
   
-}
