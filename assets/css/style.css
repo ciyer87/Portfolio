@@ -26,71 +26,58 @@ body {
 header {
     background-color:var(--header-footer-background-color);
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-between; 
     flex-wrap: wrap;
     top: 0;
-    width: 100%;
-    align-items: flex-end;
+    width: 100%;  
   }
   
 header h1 {
     font-weight: bold;
     font-size: 36px;
     flex: 1 40%;
-    align-self: flex-start;
     padding-left: 10px;
     text-align: center;   
   }
   
-header a {
-    
+header a { 
     text-decoration: underline;
-    color: var(--lightskyblue); 
-  
+    color: var(--lightskyblue);   
   }
   
 header nav {
-    margin: 7px 0;
     display: flex;
     flex: 2 50%;
-    width: 100%;
-    align-items: flex-end;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   
-  header nav ul {
-    display: flex;
-    margin:0;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    list-style: none;
-    width: 100%
-  }
+header nav ul {
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+  width: 100%
+} 
 
-  header nav ul li {
-    flex: 1 100%;
-  
-  }
-  
-  header nav ul li a {
-    font-weight: lighter;
-    font-size: 1.55vw;
-    
-    width: 100%;
-    padding-left: 50px;
-  }
-  
-  header nav ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 15px;
-    text-shadow: none;
-  } 
 
-  /* HEADER / NAVBAR STYLES END */
-  /* hero section that holds picture and title for the candidate */
+header nav ul li {
+  flex: 1 100%; 
+}
+  
+header nav ul li a {
+  font-weight: lighter;
+  font-size: 1.55vw;   
+  padding-left: 50px;
+}
+  
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+} 
 
+/* HEADER / NAVBAR STYLES END */
+/* hero section that holds picture and title for the candidate */
 
 main {
   display: flex;
@@ -102,15 +89,12 @@ main {
     margin-bottom: 25px;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: flext-start;
     background-image: url(../images/ggb-night-time.jpeg);
     background-size: auto;
     background-attachment: fixed;
-    background-position: center -250px;
-    
+    background-position: center -250px;    
 }
+
 .hero .picture, .picture img{
     max-width: 250px;
     border-radius: 20px;
@@ -119,7 +103,6 @@ main {
 
 /* Styling to the subtitle the Hero container */
 .subtitle { 
-  padding-bottom: 15px;
   padding-right: 15px;
   padding-top: 5%;
   opacity: .95;
@@ -138,92 +121,78 @@ main {
 }
 
 /* Styling the about me container */
-
 .aboutme {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 15px;
-  margin-bottom: 15px;
-  
-  padding: 20px;     
+  margin-bottom: 15px;     
 }
 
 /* styling the about me title on the left pane of the screen */
 .aboutme-title{ 
-  padding-top: 30px;
-  font-size: 35px;
+  font-size: 30px;
   flex: 0 0 250px;
   padding: 20px;
   text-align: right;
   margin-bottom: 30px;
   border-right: 2px solid var(--about-me-work-border);
-
 }
 
 /* styling the about me content of the candidate */
 .aboutme .aboutme-desc p {
   width: 80%;
   font-size: 15px;
-  padding: 20px 5px;
+  padding: 20px 10px 20px;
   margin-left: 55px; 
 }
 
 /* styling the project section */
-
-  .work-title {
-    display: flex;
-    flex-direction: row;   
-    padding: 20px, 0;
-  }
-
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 80%;
-    position: relative; 
-    margin-top: 15px;
-    margin-left: 80px;
-  }
-
-  /* styling the title of the container */
-  .work-title p {
-    padding-top: 30px;
-    flex: 0 0 250px;
-    font-size: 35px;
-    padding: 20px;
-    margin-bottom: 30px;
-    text-align: right;
-    border-right: 2px solid var(--about-me-work-border); 
-  }
-
- /* flex child */
- .flex-container .projects {
-  /* make each one 35%, putting 10px between each element on the page */
-  width: calc(35% - 10px);
-  margin:5px;
-  border: 3px solid aquamarine;
-  border-radius: 5px;
-  /*background-position: center;*/
-  background-size: cover;
-  /* set minimum height value so there's room */
-  min-height: 200px;
-  /* rather than use position...use flexbox and create column instead of row */
+.work-container {
   display: flex;
-  flex-direction: column;
-  position: relative;
-  flex: 1 40%; 
- }
+}
 
-.projects:nth-child(1) {
-  /* this is for the bigger image of the 1st project */
-  width: 80%; 
+.work-title {
+  display: flex;
+  flex-direction: row;
+  padding: 20px, 0;
+  flex: 0 0 250px;
+}
+
+.work-container img{
+  width: 100%;   
+}
+
+.work-container .projects {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.work-container .projects > a {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+  padding-left: 10px;    
+}
+
+.work-subcontainer {
+  padding-left: 55px;
+}
+
+/* styling the title of the container */
+.work-title p {
+  flex: 0 0 250px;
+  font-size: 30px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: right;
+  border-right: 2px solid var(--about-me-work-border); 
 }
 
 /* styling for the name of the project shown on each project image */
 .first-text {
   position: absolute;
-  top: 80%;
+  top: 90%;
+  right: 79%;
   font-size: 30px;
   font-weight: bold;   
 }
@@ -231,6 +200,7 @@ main {
 /* styling for the smaller text that lists what was used to build the project */
 .smallimg-first-text {
   position: absolute;
+  left: 20px;
   top: 70%;
   font-size: 20px;
   font-weight: bold;  
@@ -247,56 +217,89 @@ main {
 }
 
 /* contact-me styling begin */
-.contact-container {
-  height: 100%; 
-  display: flex;   
-}
-.contact{ /* Cell declarations for the title of the container */
-  padding-top: 15px;
-  font-size: 35px;
-  flex: 0 0 250px;
-  padding-right: 20px;
-  padding-left: 50px;
-  padding-bottom: 50px;
-  text-align: right;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  border-right: 2px solid var(--about-me-work-border);
-}
-
-.contact-list{
-  padding-left: 30px;
-  flex-wrap: wrap;
+.contact {
   display: flex;
-  justify-content: space-evenly;
-  font-size: 1.5vw;
-  width: 100%;
-  align-content: center;
 }
 
-.tel{
-  text-decoration: underline;
+.contact p {
+  padding-top: 30px;
+  flex: 0 0 250px;
+  font-size: 30px;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-left: 55px;
+  text-align: right;
+  border-right: 2px solid var(--about-me-work-border); 
+}
+
+.contact-list > ul {
+  display: flex;
+  margin:20px;
+  align-content: center;
+  list-style: none;
+  width: 100%
+}
+
+.contact-list > ul > li {
+  flex: 1 100%;
+}
+
+.contact-list ul li a {
+  font-weight: lighter;
+  font-size: 1.55vw;  
+  width: 100%;
+  padding-left: 60px;
 }
 
 /* media queries styling */
-
-/* Width at 1024px and below */
-
 /* modify the layout for ipad-sized screens */
 @media screen and (min-width: 768px) {
   header nav ul li {
-    border: none;
-    
+    flex-direction: row;
     font-size: 22px;
     margin: 0;
     padding: 0;
   }
- 
+
+  .first-text {
+    top: 85%;
+    right: 75%;
+    font-size: 20px
+  }
+
+  .second-text {
+    font-size: 10px;
+  }
+
+  .smallimg-first-text {
+    top: 70%;
+    font-size: 15px;
+  }
+
+  header nav ul li a {
+    font-size: 1vw;
+  }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   header nav ul li{
     flex-direction: row;
+  }
+
+  header nav ul li a {
+    font-size: 1.55vw;
+  }
+
+  .hero {
+    margin-bottom: 0px;
+  }
+  .hero .picture, .picture img {
+    margin-left: 5px;
+  }
+
+  .flex-container {
+    width: auto;
+    margin-left: 0;
   }
   .aboutme{
     flex-direction: column;
@@ -310,26 +313,85 @@ main {
     flex-basis: 100%;
     text-align: center;
     border-right: none;
+    margin-bottom: 0px;
   }
 
-  .work-title{
+  .work-container{
     flex-direction: column;
     align-items: stretch;
     justify-content: space-around;
-    padding: 20px;
+  }
+
+  .work-container > div {
+    flex-basis: 100%;
+    text-align: center;
+    border-right: none;    
   }
 
   .work-title p {
+    margin-bottom: 0px;
+    text-align: center;
+    flex-basis: 100%;
+  }
 
+  .work-container > div > p {
+    border-right: none;
+    margin-bottom: 20px;
     border-bottom: 2px solid var(--about-me-work-border);
+  }
+
+  .work-subcontainer {
+    padding-left: 0;
+  }
+
+  .first-text {
+    top: 85%;
+    right: 75%;
+    font-size: 10px;
+  }
+
+  .second-text {
+    font-size: 5px;
+  }
+
+  .smallimg-first-text {
+    top: 55%;
+    font-size: 10px;
+  }
+
+  .contact{
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    display: block;
+  }
+  
+  .contact p{
     flex-basis: 100%;
     text-align: center;
-    border-right: none;
-    
-    
+    padding-top: 0px;
+    padding-bottom: 20px;
   }
-}
 
+  .contact > div > p {
+    border-right: none;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--about-me-work-border);
+  }
+
+  .contact-list ul li a{
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-basis: 100%;
+  font-size: 1.55vw;
+  padding-left: 5px;
+  }
+
+  
+
+  
+}
 
 
   
