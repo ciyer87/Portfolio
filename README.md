@@ -1,17 +1,20 @@
 # Portfolio
 
-A professional portfolio page to spotlight my work as a full stack web developer for potential employers. 
+A professional portfolio page to spotlight my work as a full stack web deeloper for potential employers.
+
 ===================================================================================================================================
 
 ## User Story
-AS AN employer
+
+AS AN employer:
 
 I WANT to view a potential employee's deployed portfolio of work samples
+So That I can review samples of their work and assess whether they're a good candidate for an open position
 
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ====================================================================================================================================
 
 ## Acceptance Criteria
+
 GIVEN I need to sample a potential employee's previous work
 
 WHEN I load their portfolio
@@ -30,7 +33,8 @@ WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 
 WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+Then i am presented with a repsonsive layout that adapts to my viewport
+
 ========================================================================================================================================
 
 ## Technologies Used
@@ -39,6 +43,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 * CSS3
 * Flexbox
 * @Media queries
+
 =========================================================================================================================================
 
 ## Screenshots
@@ -56,5 +61,5 @@ THEN I am presented with a responsive layout that adapts to my viewport
 *  The **URL of the GitHub repository** that contains the code: (https://github.com/ciyer87/Portfolio) 
 *  The **URL of the deployed application**: (https://ciyer87.github.io/Portfolio/)
 
-The following changes were made in the application:
+
 
