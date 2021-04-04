@@ -1,8 +1,43 @@
 # Portfolio
 
-This is the portfolio that describes about me and the projects that i have worked on.  
+A professional portfolio page to spotlight my work as a full stack web developer for potential employers. 
 
-* The below image (**mockup**) shows the web application's appearance and functionality:
+# User Story
+AS AN employer
+
+I WANT to view a potential employee's deployed portfolio of work samples
+
+SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+
+# Acceptance Criteria
+GIVEN I need to sample a potential employee's previous work
+
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo, and links to sections about them, their work, and how to contact them
+
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+
+# Technologies Used
+
+* HTML5
+* CSS3
+* Flexbox
+* @Media queries
+
+# Screenshots
 
   ![A website with a navigation, a hero image, sections on the left and center and a footer](assets/images/challenge1-screenshot.png)
   
@@ -11,17 +46,3 @@ This is the portfolio that describes about me and the projects that i have worke
 
 The following changes were made in the application:
 
-**HTML:**
-
-
-* created a new HTML with flexbox
-* HTML contained mutliple flexbox for header, contact me, about me and list of projects.
-* added alt attribute for accessiblity
-* added comments
-
-
-**CSS:**
-
-* created new css to syle the portfolio
-* created media queries for small screens
-* added comments
